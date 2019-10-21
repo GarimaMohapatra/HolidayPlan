@@ -15,6 +15,10 @@
 		15034948234FD474003FE2B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15034946234FD474003FE2B9 /* LaunchScreen.storyboard */; };
 		15034953234FD474003FE2B9 /* HolidayPlanningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15034952234FD474003FE2B9 /* HolidayPlanningTests.swift */; };
 		1503495E234FD474003FE2B9 /* HolidayPlanningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503495D234FD474003FE2B9 /* HolidayPlanningUITests.swift */; };
+		1519795F235A87B800F6949A /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519795E235A87B800F6949A /* NetworkLayer.swift */; };
+		15197961235AE38B00F6949A /* LearnAppMaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15197960235AE38B00F6949A /* LearnAppMaking.swift */; };
+		15197963235C0B1B00F6949A /* OxfordDictonary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15197962235C0B1A00F6949A /* OxfordDictonary.swift */; };
+		15197965235D2D4B00F6949A /* PostnetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15197964235D2D4B00F6949A /* PostnetworkLayer.swift */; };
 		8B6B9B875680DCF0530421CC /* Pods_HolidayPlanning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397E883E7E4C83D5BF23B7E2 /* Pods_HolidayPlanning.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,10 @@
 		15034959234FD474003FE2B9 /* HolidayPlanningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolidayPlanningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1503495D234FD474003FE2B9 /* HolidayPlanningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayPlanningUITests.swift; sourceTree = "<group>"; };
 		1503495F234FD474003FE2B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1519795E235A87B800F6949A /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		15197960235AE38B00F6949A /* LearnAppMaking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAppMaking.swift; sourceTree = "<group>"; };
+		15197962235C0B1A00F6949A /* OxfordDictonary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictonary.swift; sourceTree = "<group>"; };
+		15197964235D2D4B00F6949A /* PostnetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostnetworkLayer.swift; sourceTree = "<group>"; };
 		397E883E7E4C83D5BF23B7E2 /* Pods_HolidayPlanning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HolidayPlanning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF1BC9B1CE3D01FC6E9CD08 /* Pods-HolidayPlanning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HolidayPlanning.debug.xcconfig"; path = "Target Support Files/Pods-HolidayPlanning/Pods-HolidayPlanning.debug.xcconfig"; sourceTree = "<group>"; };
 		996026E8996BC18F1FBBCA2C /* Pods-HolidayPlanning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HolidayPlanning.release.xcconfig"; path = "Target Support Files/Pods-HolidayPlanning/Pods-HolidayPlanning.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,9 +118,13 @@
 				1503493D234FD471003FE2B9 /* SceneDelegate.swift */,
 				1503493F234FD471003FE2B9 /* ViewController.swift */,
 				15034941234FD471003FE2B9 /* Main.storyboard */,
+				1519795E235A87B800F6949A /* NetworkLayer.swift */,
+				15197964235D2D4B00F6949A /* PostnetworkLayer.swift */,
+				15197960235AE38B00F6949A /* LearnAppMaking.swift */,
 				15034944234FD474003FE2B9 /* Assets.xcassets */,
 				15034946234FD474003FE2B9 /* LaunchScreen.storyboard */,
 				15034949234FD474003FE2B9 /* Info.plist */,
+				15197962235C0B1A00F6949A /* OxfordDictonary.swift */,
 			);
 			path = HolidayPlanning;
 			sourceTree = "<group>";
@@ -327,8 +339,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15197965235D2D4B00F6949A /* PostnetworkLayer.swift in Sources */,
+				1519795F235A87B800F6949A /* NetworkLayer.swift in Sources */,
+				15197963235C0B1B00F6949A /* OxfordDictonary.swift in Sources */,
 				15034940234FD471003FE2B9 /* ViewController.swift in Sources */,
 				1503493C234FD471003FE2B9 /* AppDelegate.swift in Sources */,
+				15197961235AE38B00F6949A /* LearnAppMaking.swift in Sources */,
 				1503493E234FD471003FE2B9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

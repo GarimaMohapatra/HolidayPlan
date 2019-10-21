@@ -15,7 +15,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let requestlocation = CLLocationManager()
-       
+        let appmaking = AppMaking()
+       // appmaking.serviceRequest(url: "https://learnappmaking.com/ex/users.json", modelType: [LearnAppMakingInfo].self)
+        let createdictionary = CreateDictionary()
+        createdictionary.postServiceRequest(url: "https://od-api.oxforddictionaries.com/api/v2", valueOfheader: "ac5f4204", keyOfheader: "188096a142883e86eee4ef848845411c", model: oxfordDictonary.self)
         requestlocation.delegate = self
         requestlocation.requestAlwaysAuthorization()
         requestlocation.requestWhenInUseAuthorization()
@@ -30,6 +33,7 @@ class ViewController: UIViewController {
         toButton.setTitle(todayDate, for: .normal)
         shimmeringView.contentView = shimmeringLabel
         shimmeringView.isShimmering = true
+        
         
     }
   
