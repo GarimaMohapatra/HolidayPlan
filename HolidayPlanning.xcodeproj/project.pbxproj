@@ -92,6 +92,8 @@
 		1503492F234FD471003FE2B9 = {
 			isa = PBXGroup;
 			children = (
+				15197967235FB70600F6949A /* Model */,
+				15197966235FB6DB00F6949A /* NetworkLayer */,
 				1503493A234FD471003FE2B9 /* HolidayPlanning */,
 				15034951234FD474003FE2B9 /* HolidayPlanningTests */,
 				1503495C234FD474003FE2B9 /* HolidayPlanningUITests */,
@@ -118,13 +120,9 @@
 				1503493D234FD471003FE2B9 /* SceneDelegate.swift */,
 				1503493F234FD471003FE2B9 /* ViewController.swift */,
 				15034941234FD471003FE2B9 /* Main.storyboard */,
-				1519795E235A87B800F6949A /* NetworkLayer.swift */,
-				15197964235D2D4B00F6949A /* PostnetworkLayer.swift */,
-				15197960235AE38B00F6949A /* LearnAppMaking.swift */,
 				15034944234FD474003FE2B9 /* Assets.xcassets */,
 				15034946234FD474003FE2B9 /* LaunchScreen.storyboard */,
 				15034949234FD474003FE2B9 /* Info.plist */,
-				15197962235C0B1A00F6949A /* OxfordDictonary.swift */,
 			);
 			path = HolidayPlanning;
 			sourceTree = "<group>";
@@ -145,6 +143,24 @@
 				1503495F234FD474003FE2B9 /* Info.plist */,
 			);
 			path = HolidayPlanningUITests;
+			sourceTree = "<group>";
+		};
+		15197966235FB6DB00F6949A /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				1519795E235A87B800F6949A /* NetworkLayer.swift */,
+				15197964235D2D4B00F6949A /* PostnetworkLayer.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		15197967235FB70600F6949A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15197960235AE38B00F6949A /* LearnAppMaking.swift */,
+				15197962235C0B1A00F6949A /* OxfordDictonary.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1E74549D63FAA01E7D9A140C /* Frameworks */ = {

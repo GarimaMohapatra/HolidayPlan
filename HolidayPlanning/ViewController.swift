@@ -15,10 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let requestlocation = CLLocationManager()
-        let appmaking = AppMaking()
-       // appmaking.serviceRequest(url: "https://learnappmaking.com/ex/users.json", modelType: [LearnAppMakingInfo].self)
         let createdictionary = CreateDictionary()
-        createdictionary.postServiceRequest(url: "https://od-api.oxforddictionaries.com/api/v2", valueOfheader: "ac5f4204", keyOfheader: "188096a142883e86eee4ef848845411c", model: oxfordDictonary.self)
+        createdictionary.postServiceRequest(url: "https://od-api.oxforddictionaries.com/api/v2/entries/en-gb/example", dic: ["app_id":"ac5f4204","app_key":"188096a142883e86eee4ef848845411c"], model: oxfordDictonary.self, componentScheme: "https", componenthost: "od-api.oxforddictionaries.com", appendcomponent: "/api/v2/entries/en-gb", userEntry: "/love", token: nil, value: nil)
         requestlocation.delegate = self
         requestlocation.requestAlwaysAuthorization()
         requestlocation.requestWhenInUseAuthorization()
