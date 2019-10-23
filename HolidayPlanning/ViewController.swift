@@ -8,22 +8,20 @@
 
 import UIKit
 import MapKit
-//import CoreLocation
+import Shimmer
 
 class ViewController: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let requestlocation = CLLocationManager()
+        let createdictionary = CreateDictionary()
+        createdictionary.postServiceRequest(url: "https://od-api.oxforddictionaries.com/api/v2/entries/en-gb/example", dic: ["app_id":"ac5f4204","app_key":"188096a142883e86eee4ef848845411c"], model: oxfordDictonary.self, componentScheme: "https", componenthost: "od-api.oxforddictionaries.com", appendcomponent: "/api/v2/entries/en-gb", userEntry: "/love", token: nil, value: nil)
         requestlocation.delegate = self
         requestlocation.requestAlwaysAuthorization()
         requestlocation.requestWhenInUseAuthorization()
         requestlocation.requestLocation()
        
-        
-        
-        
         datePicker.addTarget(self, action: #selector(datePickerSelector(sender:)), for: .valueChanged)
         datePicker.date =  Date()
         let dateFormatter = DateFormatter()
@@ -31,16 +29,29 @@ class ViewController: UIViewController {
         let todayDate = dateFormatter.string(from: datePicker.date)
         fromButton.setTitle(todayDate, for: .normal)
         toButton.setTitle(todayDate, for: .normal)
+        shimmeringView.contentView = shimmeringLabel
+        shimmeringView.isShimmering = true
+        
         
     }
+  
+    @IBOutlet weak var shimmeringSubview: UIView!
     
-    @IBOutlet weak var startingPoint: UITextField!
+    @IBOutlet var shimmerMainView: FBShimmeringView!
+    
+    @IBOutlet var shimmeringView:FBShimmeringView!
+ 
+    @IBOutlet weak var shimmerSubview: UIView!
+    @IBOutlet weak var startingPoint: UILabel!
     
     @IBOutlet weak var fromButton: UIButton!
     
     @IBOutlet weak var toButton: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    @IBOutlet weak var scrollview: UIScrollView!
+    
+    @IBOutlet weak var shimmeringLabel: UIView!
     @IBAction func startDate(_ sender: Any) {
          
     }
@@ -70,7 +81,7 @@ class ViewController: UIViewController {
                 if let placemarks = placemarks {
                     placemark = placemarks.first
                 }
-                self.startingPoint.text = "\(placemark!.country),\(placemark?.locality)"
+                self.startingPoint.text = "\(placemark!.country! ?? "No country found"),\(placemark!.locality! ?? "No locality found")"
             }
             
         }
@@ -83,5 +94,12 @@ class ViewController: UIViewController {
         print("error:: \(error)")
     }
     
+}
+
+extension ViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        //scrollView.contentOffset.x = 2800
+        
+    }
 }
 
