@@ -11,64 +11,48 @@ import MapKit
 import Shimmer
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var collectionview: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let dataModel = CreateDictionary()
         let requestlocation = CLLocationManager()
         let createdictionary = CreateDictionary()
-        createdictionary.postServiceRequest(url: "https://od-api.oxforddictionaries.com/api/v2/entries/en-gb/example", dic: ["app_id":"ac5f4204","app_key":"188096a142883e86eee4ef848845411c"], model: oxfordDictonary.self, componentScheme: "https", componenthost: "od-api.oxforddictionaries.com", appendcomponent: "/api/v2/entries/en-gb", userEntry: "/love", token: nil, value: nil)
+        
+        let url = "https://od-api.oxforddictionaries.com/api/v2/entries/en-gb/example"
+        let dic = ["app_id":"ac5f4204","app_key":"188096a142883e86eee4ef848845411c"]
+        let model = oxfordDictonary.self
+        let componentScheme = "https"
+        let componenthost = "od-api.oxforddictionaries.com"
+        let appendcomponent = "/api/v2/entries/en-gb"
+        let userEntry = "/love"
+        let token: String? = nil
+        let value: String? = nil
+        
+        let parameters = Parameters<oxfordDictonary>(url: url, dic: dic, model: oxfordDictonary.self, componentScheme: componentScheme, componenthost: componenthost, appendcomponent: appendcomponent, userEntry: userEntry, token: token, value: value)
+        createdictionary.postServiceRequest(parameters: parameters) { (model, error) in
+            print(model!)
+        }
+        
+//        createdictionary.postServiceRequest(url: "https://od-api.oxforddictionaries.com/api/v2/entries/en-gb/example", dic: ["app_id":"ac5f4204","app_key":"188096a142883e86eee4ef848845411c"], model: oxfordDictonary.self, componentScheme: "https", componenthost: "od-api.oxforddictionaries.com", appendcomponent: "/api/v2/entries/en-gb", userEntry: "/love", token: nil, value: nil)
         requestlocation.delegate = self
         requestlocation.requestAlwaysAuthorization()
         requestlocation.requestWhenInUseAuthorization()
         requestlocation.requestLocation()
-       
-        datePicker.addTarget(self, action: #selector(datePickerSelector(sender:)), for: .valueChanged)
-        datePicker.date =  Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .short
-        let todayDate = dateFormatter.string(from: datePicker.date)
-        fromButton.setTitle(todayDate, for: .normal)
-        toButton.setTitle(todayDate, for: .normal)
-        shimmeringView.contentView = shimmeringLabel
         shimmeringView.isShimmering = true
-        
+        func useData(data: String) {
+            print(data)
+        }
         
     }
-  
-    @IBOutlet weak var shimmeringSubview: UIView!
     
-    @IBOutlet var shimmerMainView: FBShimmeringView!
     
     @IBOutlet var shimmeringView:FBShimmeringView!
- 
-    @IBOutlet weak var shimmerSubview: UIView!
-    @IBOutlet weak var startingPoint: UILabel!
     
-    @IBOutlet weak var fromButton: UIButton!
-    
-    @IBOutlet weak var toButton: UIButton!
-    @IBOutlet weak var datePicker: UIDatePicker!
-    
-    @IBOutlet weak var scrollview: UIScrollView!
-    
-    @IBOutlet weak var shimmeringLabel: UIView!
-    @IBAction func startDate(_ sender: Any) {
-         
-    }
-    
-    @objc func datePickerSelector(sender: UIDatePicker) {
-     let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .short
-       let dateString = dateFormatter.string(from: sender.date)
-        print(dateString)
-        fromButton.setTitle(dateString, for: .normal)
-        toButton.setTitle(dateString, for: .normal)
-    }
-    
-    
-
 }
- extension ViewController: CLLocationManagerDelegate {
+extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             print(location)
@@ -81,14 +65,10 @@ class ViewController: UIViewController {
                 if let placemarks = placemarks {
                     placemark = placemarks.first
                 }
-                self.startingPoint.text = "\(placemark!.country! ?? "No country found"),\(placemark!.locality! ?? "No locality found")"
             }
             
         }
-        
     }
-    
-    
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("error:: \(error)")
@@ -96,10 +76,28 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        //scrollView.contentOffset.x = 2800
+extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reuseCell", for: indexPath) as! DequeCellCollectionViewCell
+        
+        return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.frame.size.width
+        let height = collectionView.frame.size.height
+        
+        return CGSize(width: width, height: height)
         
     }
+    
+    
+    
+    
+    
 }
 
