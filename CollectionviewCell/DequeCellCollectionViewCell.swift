@@ -8,7 +8,11 @@
 
 import UIKit
 
-class DequeCellCollectionViewCell: UICollectionViewCell {
-    
+final class DequeCellCollectionViewCell: UICollectionViewCell {
+
     @IBOutlet weak var celllabel: UILabel!
+
+    func set(title: String) {
+        self.celllabel.text = title
+    }
 }

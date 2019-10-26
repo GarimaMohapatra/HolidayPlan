@@ -3,25 +3,44 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		010EC3936DA2672FE013347C28827BC6 /* FBShimmeringLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EE47919FB140AAA7FE06A60C7EA742E /* FBShimmeringLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0442912473D5C8ACBA21DB00AA39919B /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1BFE8E6C0A2BE27BF4382A58FD9630 /* FBShimmeringView.m */; };
-		06B604FF86FE51F732F056F30E221757 /* FBShimmering.h in Headers */ = {isa = PBXBuildFile; fileRef = FF67D2DA1EFEAED7D81A48FA767EC8AD /* FBShimmering.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10B55A56CD71D2581095F4444B0106EB /* FBShimmeringView.h in Headers */ = {isa = PBXBuildFile; fileRef = 346751EE6A30C0A9EEBA387700AFAC50 /* FBShimmeringView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		010EC3936DA2672FE013347C28827BC6 /* FBShimmeringLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FF846A29EAD7391D6693BD8F07CE560F /* FBShimmeringLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0442912473D5C8ACBA21DB00AA39919B /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A4DC2C47DBE4D063A8ED2A9C4E1535 /* FBShimmeringView.m */; };
+		06B604FF86FE51F732F056F30E221757 /* FBShimmering.h in Headers */ = {isa = PBXBuildFile; fileRef = 13F42D1890EE7179C69C5B8411517A46 /* FBShimmering.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10B55A56CD71D2581095F4444B0106EB /* FBShimmeringView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C62DDC005C669F52E66167B2317C984 /* FBShimmeringView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E38169611F7FA559A2DF385808B430F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		3ED94DDBC099F511CE4099485006D379 /* Pods-HolidayPlanning-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A572AA585135F471673A41F2899D407 /* Pods-HolidayPlanning-dummy.m */; };
-		9A27BAA9DA8E44C4DC62FF79D9A5122D /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BACA5FAA9A2A5A57A49A88CDA5165212 /* FBShimmeringLayer.m */; };
-		9BF554368ED872301E6E5410BB64756A /* Pods-HolidayPlanning-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22CC088B15FEF9415C365C1A788CA037 /* Pods-HolidayPlanning-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF743A016DE859AAC2C57AE552F27620 /* Shimmer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ED289DAE425CEEECC29811A753FA05 /* Shimmer-dummy.m */; };
-		CE8F2171AD2E42BDDB3928DE22D34B58 /* Shimmer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1D95416903C031951B94338E867C57 /* Shimmer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC7B8AAE76C46B562A601BC7926956CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		56E8455496AFABCA92C8F299C09E6E72 /* Pods-HolidayPlanning-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22CC088B15FEF9415C365C1A788CA037 /* Pods-HolidayPlanning-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8606DBD567BED289B7C0A9BC94BAB2FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9A27BAA9DA8E44C4DC62FF79D9A5122D /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0F2E39BD5F16C5FA8D083B5E38279 /* FBShimmeringLayer.m */; };
+		BF743A016DE859AAC2C57AE552F27620 /* Shimmer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85ABA1419D1543406B3527D86AF18299 /* Shimmer-dummy.m */; };
+		CE8F2171AD2E42BDDB3928DE22D34B58 /* Shimmer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 497CF3FB84B28F28F43076B8DE84A7AF /* Shimmer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2E6B0998B311B815525FDA79A840F0F /* Pods-HolidayPlanning-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A572AA585135F471673A41F2899D407 /* Pods-HolidayPlanning-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D6AD66694FE6E3D8E07B5EBCBAFAC89E /* PBXContainerItemProxy */ = {
+		5322FCA00C93F5C09B7C7643F0377FFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		5A1FB5055B42D0180D7C51EFD941860E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -31,33 +50,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CB0F2E39BD5F16C5FA8D083B5E38279 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBShimmeringLayer.m; path = FBShimmering/FBShimmeringLayer.m; sourceTree = "<group>"; };
+		13F42D1890EE7179C69C5B8411517A46 /* FBShimmering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBShimmering.h; path = FBShimmering/FBShimmering.h; sourceTree = "<group>"; };
+		15A4DC2C47DBE4D063A8ED2A9C4E1535 /* FBShimmeringView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBShimmeringView.m; path = FBShimmering/FBShimmeringView.m; sourceTree = "<group>"; };
 		22CC088B15FEF9415C365C1A788CA037 /* Pods-HolidayPlanning-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HolidayPlanning-umbrella.h"; sourceTree = "<group>"; };
 		25D36F062F71120390B8AFAA1D65FCE5 /* Pods-HolidayPlanning-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HolidayPlanning-frameworks.sh"; sourceTree = "<group>"; };
 		2A572AA585135F471673A41F2899D407 /* Pods-HolidayPlanning-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HolidayPlanning-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		346751EE6A30C0A9EEBA387700AFAC50 /* FBShimmeringView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBShimmeringView.h; path = FBShimmering/FBShimmeringView.h; sourceTree = "<group>"; };
-		4D1BFE8E6C0A2BE27BF4382A58FD9630 /* FBShimmeringView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBShimmeringView.m; path = FBShimmering/FBShimmeringView.m; sourceTree = "<group>"; };
-		5EE47919FB140AAA7FE06A60C7EA742E /* FBShimmeringLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBShimmeringLayer.h; path = FBShimmering/FBShimmeringLayer.h; sourceTree = "<group>"; };
+		3C62DDC005C669F52E66167B2317C984 /* FBShimmeringView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBShimmeringView.h; path = FBShimmering/FBShimmeringView.h; sourceTree = "<group>"; };
+		440D3AC3A12F4831F381B3FBBDD871DD /* Shimmer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Shimmer-Info.plist"; sourceTree = "<group>"; };
+		497CF3FB84B28F28F43076B8DE84A7AF /* Shimmer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Shimmer-umbrella.h"; sourceTree = "<group>"; };
+		4A809F4A77E17F6BB67866C50674472D /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
 		6F377704D4593BA0292A5E1AE26A67AB /* Pods-HolidayPlanning-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HolidayPlanning-Info.plist"; sourceTree = "<group>"; };
 		7E2D94D7A5F8BFC2C06183E7E5A432A6 /* Pods-HolidayPlanning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HolidayPlanning.release.xcconfig"; sourceTree = "<group>"; };
-		8CCDB468301883DFBF4C24B5929C2269 /* Shimmer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Shimmer.xcconfig; sourceTree = "<group>"; };
+		85ABA1419D1543406B3527D86AF18299 /* Shimmer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Shimmer-dummy.m"; sourceTree = "<group>"; };
+		871AF391A1F4AC179788E04A649D43D1 /* Shimmer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Shimmer.modulemap; sourceTree = "<group>"; };
+		90C7D515FACDB65ABCC576A356119798 /* Shimmer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Shimmer.xcconfig; sourceTree = "<group>"; };
+		9750FF937B52E2AB686F232A3C0040F4 /* Shimmer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Shimmer-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ABECBFE7D75EC0DC302067B842272F0E /* Pods-HolidayPlanning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HolidayPlanning.debug.xcconfig"; sourceTree = "<group>"; };
-		B04B701F77B81539CC8B72FA3B39FB39 /* Shimmer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Shimmer-Info.plist"; sourceTree = "<group>"; };
 		B1D263F5E9709458A655C566B4D53AFA /* Pods-HolidayPlanning-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HolidayPlanning-acknowledgements.plist"; sourceTree = "<group>"; };
-		B9ED289DAE425CEEECC29811A753FA05 /* Shimmer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Shimmer-dummy.m"; sourceTree = "<group>"; };
-		BACA5FAA9A2A5A57A49A88CDA5165212 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBShimmeringLayer.m; path = FBShimmering/FBShimmeringLayer.m; sourceTree = "<group>"; };
 		C4FA9BDC53E90C1B4ECD7BE447EA0816 /* Pods-HolidayPlanning.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HolidayPlanning.modulemap"; sourceTree = "<group>"; };
 		C99CA972AA03EDFDA9C1D366D20B11F9 /* Pods_HolidayPlanning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HolidayPlanning.framework; path = "Pods-HolidayPlanning.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEFC4FB0CF941A10C792369CDA90C0C /* Pods-HolidayPlanning-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HolidayPlanning-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DA8B04D03660183A9A8D4316394E3A05 /* Shimmer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Shimmer-prefix.pch"; sourceTree = "<group>"; };
-		DF25BD57FC37A841530D2DE3FAA3EB7D /* Shimmer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Shimmer.modulemap; sourceTree = "<group>"; };
 		FD65F4477DA6FF1249FE4272D666BECA /* Shimmer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Shimmer.framework; path = Shimmer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE1D95416903C031951B94338E867C57 /* Shimmer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Shimmer-umbrella.h"; sourceTree = "<group>"; };
-		FF67D2DA1EFEAED7D81A48FA767EC8AD /* FBShimmering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBShimmering.h; path = FBShimmering/FBShimmering.h; sourceTree = "<group>"; };
+		FF846A29EAD7391D6693BD8F07CE560F /* FBShimmeringLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBShimmeringLayer.h; path = FBShimmering/FBShimmeringLayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		28112E7A7B8B25664443B25D9AC9B57E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8606DBD567BED289B7C0A9BC94BAB2FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4847DA929322DC64B67545778FD25D9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,17 +94,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5D2AC82A7FB79AD045075473D263D3A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC7B8AAE76C46B562A601BC7926956CB /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		048EBBBAA86C8028365B2FC4428C6F55 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A809F4A77E17F6BB67866C50674472D /* SwiftLint.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
 		1D999693CC0C98A81660ADEC37BE89FB /* Pods-HolidayPlanning */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,12 +131,50 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		297F51C5633A9A453D8BA70BF109BA65 /* Pods */ = {
+		3AB30E30AFCE6C7A8FBD2B0D3CCAA5F3 /* Shimmer */ = {
 			isa = PBXGroup;
 			children = (
-				C15EF01FE08A36CC2E783ABAACAC1B97 /* Shimmer */,
+				13F42D1890EE7179C69C5B8411517A46 /* FBShimmering.h */,
+				FF846A29EAD7391D6693BD8F07CE560F /* FBShimmeringLayer.h */,
+				0CB0F2E39BD5F16C5FA8D083B5E38279 /* FBShimmeringLayer.m */,
+				3C62DDC005C669F52E66167B2317C984 /* FBShimmeringView.h */,
+				15A4DC2C47DBE4D063A8ED2A9C4E1535 /* FBShimmeringView.m */,
+				58E33C7AA0B1B26666061048B342EF05 /* Support Files */,
+			);
+			name = Shimmer;
+			path = Shimmer;
+			sourceTree = "<group>";
+		};
+		58E33C7AA0B1B26666061048B342EF05 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				871AF391A1F4AC179788E04A649D43D1 /* Shimmer.modulemap */,
+				90C7D515FACDB65ABCC576A356119798 /* Shimmer.xcconfig */,
+				85ABA1419D1543406B3527D86AF18299 /* Shimmer-dummy.m */,
+				440D3AC3A12F4831F381B3FBBDD871DD /* Shimmer-Info.plist */,
+				9750FF937B52E2AB686F232A3C0040F4 /* Shimmer-prefix.pch */,
+				497CF3FB84B28F28F43076B8DE84A7AF /* Shimmer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Shimmer";
+			sourceTree = "<group>";
+		};
+		7E314AB6F68EA46AEEC1CB2CD3DA1375 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AB30E30AFCE6C7A8FBD2B0D3CCAA5F3 /* Shimmer */,
+				9AEE0B9C6C746EE22BDE4E42BAA3F30F /* SwiftLint */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AEE0B9C6C746EE22BDE4E42BAA3F30F /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				048EBBBAA86C8028365B2FC4428C6F55 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -116,20 +183,6 @@
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		C15EF01FE08A36CC2E783ABAACAC1B97 /* Shimmer */ = {
-			isa = PBXGroup;
-			children = (
-				FF67D2DA1EFEAED7D81A48FA767EC8AD /* FBShimmering.h */,
-				5EE47919FB140AAA7FE06A60C7EA742E /* FBShimmeringLayer.h */,
-				BACA5FAA9A2A5A57A49A88CDA5165212 /* FBShimmeringLayer.m */,
-				346751EE6A30C0A9EEBA387700AFAC50 /* FBShimmeringView.h */,
-				4D1BFE8E6C0A2BE27BF4382A58FD9630 /* FBShimmeringView.m */,
-				FFBEEFEF3B573EA6F80C5A17C7E21766 /* Support Files */,
-			);
-			name = Shimmer;
-			path = Shimmer;
 			sourceTree = "<group>";
 		};
 		CE911BFCCD75F80CACD9DE7D8189E633 /* Products */ = {
@@ -146,7 +199,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				297F51C5633A9A453D8BA70BF109BA65 /* Pods */,
+				7E314AB6F68EA46AEEC1CB2CD3DA1375 /* Pods */,
 				CE911BFCCD75F80CACD9DE7D8189E633 /* Products */,
 				208E9A567A09185E7DB07491CC71D3BF /* Targets Support Files */,
 			);
@@ -158,20 +211,6 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FFBEEFEF3B573EA6F80C5A17C7E21766 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DF25BD57FC37A841530D2DE3FAA3EB7D /* Shimmer.modulemap */,
-				8CCDB468301883DFBF4C24B5929C2269 /* Shimmer.xcconfig */,
-				B9ED289DAE425CEEECC29811A753FA05 /* Shimmer-dummy.m */,
-				B04B701F77B81539CC8B72FA3B39FB39 /* Shimmer-Info.plist */,
-				DA8B04D03660183A9A8D4316394E3A05 /* Shimmer-prefix.pch */,
-				FE1D95416903C031951B94338E867C57 /* Shimmer-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Shimmer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,11 +227,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD019DA8A23486763057D82433A90AA8 /* Headers */ = {
+		88E59432EBCD2F563287BB775CAD5D91 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BF554368ED872301E6E5410BB64756A /* Pods-HolidayPlanning-umbrella.h in Headers */,
+				56E8455496AFABCA92C8F299C09E6E72 /* Pods-HolidayPlanning-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,17 +240,18 @@
 /* Begin PBXNativeTarget section */
 		A1C5F5EDA1EAB4AC6F010CC3315403C4 /* Pods-HolidayPlanning */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F265C18EC6578177335245DE0FB5E03 /* Build configuration list for PBXNativeTarget "Pods-HolidayPlanning" */;
+			buildConfigurationList = CDD8318A2D4C517F0AA7CA61EBBDE258 /* Build configuration list for PBXNativeTarget "Pods-HolidayPlanning" */;
 			buildPhases = (
-				AD019DA8A23486763057D82433A90AA8 /* Headers */,
-				FE75942ACD2E78262F2824B44E9561D1 /* Sources */,
-				A5D2AC82A7FB79AD045075473D263D3A /* Frameworks */,
-				60666021A7E661D0BE7096AD741A5B4E /* Resources */,
+				88E59432EBCD2F563287BB775CAD5D91 /* Headers */,
+				F970C9FE3286792AF979B6056D3329B3 /* Sources */,
+				28112E7A7B8B25664443B25D9AC9B57E /* Frameworks */,
+				6ABF4F15D6A2194AD148246C06C5FB12 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9BEBEA2FD63BE16B763B820242393DEA /* PBXTargetDependency */,
+				3B1510C1B07C00F6E1FE88EC6F750CE6 /* PBXTargetDependency */,
+				00B1B53320175113DE8BCDF15D4978DC /* PBXTargetDependency */,
 			);
 			name = "Pods-HolidayPlanning";
 			productName = "Pods-HolidayPlanning";
@@ -246,7 +286,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -259,6 +299,7 @@
 			targets = (
 				A1C5F5EDA1EAB4AC6F010CC3315403C4 /* Pods-HolidayPlanning */,
 				CE3774A41C0BF2BDF93D3484B60028D9 /* Shimmer */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
@@ -271,7 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60666021A7E661D0BE7096AD741A5B4E /* Resources */ = {
+		6ABF4F15D6A2194AD148246C06C5FB12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,22 +332,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE75942ACD2E78262F2824B44E9561D1 /* Sources */ = {
+		F970C9FE3286792AF979B6056D3329B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ED94DDBC099F511CE4099485006D379 /* Pods-HolidayPlanning-dummy.m in Sources */,
+				D2E6B0998B311B815525FDA79A840F0F /* Pods-HolidayPlanning-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9BEBEA2FD63BE16B763B820242393DEA /* PBXTargetDependency */ = {
+		00B1B53320175113DE8BCDF15D4978DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 5322FCA00C93F5C09B7C7643F0377FFD /* PBXContainerItemProxy */;
+		};
+		3B1510C1B07C00F6E1FE88EC6F750CE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Shimmer;
 			target = CE3774A41C0BF2BDF93D3484B60028D9 /* Shimmer */;
-			targetProxy = D6AD66694FE6E3D8E07B5EBCBAFAC89E /* PBXContainerItemProxy */;
+			targetProxy = 5A1FB5055B42D0180D7C51EFD941860E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -371,7 +418,7 @@
 			};
 			name = Release;
 		};
-		378A7831B74EE4FA8046F05E5368DD24 /* Debug */ = {
+		486A9F7350B30566665863215A4EC7F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABECBFE7D75EC0DC302067B842272F0E /* Pods-HolidayPlanning.debug.xcconfig */;
 			buildSettings = {
@@ -411,7 +458,7 @@
 		};
 		53C571BAED64B31C73C7F2E2BA5A8E61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CCDB468301883DFBF4C24B5929C2269 /* Shimmer.xcconfig */;
+			baseConfigurationReference = 90C7D515FACDB65ABCC576A356119798 /* Shimmer.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -446,7 +493,7 @@
 		};
 		5BA0183B10531A296BE46642A78F285D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CCDB468301883DFBF4C24B5929C2269 /* Shimmer.xcconfig */;
+			baseConfigurationReference = 90C7D515FACDB65ABCC576A356119798 /* Shimmer.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -480,7 +527,7 @@
 			};
 			name = Release;
 		};
-		86AB6D01F8AA469EDED2DE764AE93A40 /* Release */ = {
+		63A2D75E417F251C8DBFF87FC638DB6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E2D94D7A5F8BFC2C06183E7E5A432A6 /* Pods-HolidayPlanning.release.xcconfig */;
 			buildSettings = {
@@ -518,6 +565,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		84D7C4574E8F0F3095623F0E06F5B402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A809F4A77E17F6BB67866C50674472D /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEED47E09AF743F48544C1C4FEADEF47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A809F4A77E17F6BB67866C50674472D /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -604,11 +684,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F265C18EC6578177335245DE0FB5E03 /* Build configuration list for PBXNativeTarget "Pods-HolidayPlanning" */ = {
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				378A7831B74EE4FA8046F05E5368DD24 /* Debug */,
-				86AB6D01F8AA469EDED2DE764AE93A40 /* Release */,
+				DEED47E09AF743F48544C1C4FEADEF47 /* Debug */,
+				84D7C4574E8F0F3095623F0E06F5B402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDD8318A2D4C517F0AA7CA61EBBDE258 /* Build configuration list for PBXNativeTarget "Pods-HolidayPlanning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				486A9F7350B30566665863215A4EC7F6 /* Debug */,
+				63A2D75E417F251C8DBFF87FC638DB6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

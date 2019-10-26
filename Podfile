@@ -8,5 +8,6 @@ target 'HolidayPlanning' do
   # Pods for HolidayPlanning
 
   pod 'Shimmer'
- 
+  pod 'SwiftLint'
 end
+

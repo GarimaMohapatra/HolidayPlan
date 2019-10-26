@@ -13,17 +13,16 @@ func serviceRequest<T: Decodable>(url: String, modelType: T.Type) {
         print("Bad URL")
         return
     }
-    
-    let session = URLSession.shared.dataTask(with: url) { (data, response, error) in
-        guard let data = data, let _ = response, error == nil else {
+
+    let session = URLSession.shared.dataTask(with: url) { (data, _, error) in
+        guard let data = data, error == nil else {
             return
         }
         let model = try? JSONDecoder().decode(modelType, from: data)
         print(model ?? "Error in Decoding")
     }
-    
+
     session.resume()
 }
 
 }
-
