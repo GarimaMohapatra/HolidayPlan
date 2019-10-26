@@ -1,0 +1,20 @@
+PODS:
+  - Shimmer (1.0.2)
+  - SwiftLint (0.36.0)
+
+DEPENDENCIES:
+  - Shimmer
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Shimmer
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  SwiftLint: fc9859e4e1752340664851f667bb1898b9c90114
+
+PODFILE CHECKSUM: e69ee46be0ce3543d5f8edc0eb4e7532ee9c753b
+
+COCOAPODS: 1.8.3
